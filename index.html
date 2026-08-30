@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vishnuvardhan V | Technical Writing Portfolio</title>
+
+    <meta name="description"
+          content="Technical Writing Portfolio of Vishnuvardhan V — Technical Writing, Knowledge Management, Manufacturing Documentation and PLM.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f7f9fc;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            min-height: 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #4b5563;
+        }
+
+        .nav-links a:hover {
+            color: #111827;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: #ffffff;
+            padding: 110px 0 100px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #5b6472;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #4b5563;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 760px;
+            color: #4b5563;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            border: 1px solid #111827;
+        }
+
+        .button-primary {
+            background: #111827;
+            color: #ffffff;
+        }
+
+        .button-secondary {
+            background: #ffffff;
+            color: #111827;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: #111827;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            max-width: 750px;
+            color: #6b7280;
+            margin-bottom: 40px;
+            font-size: 17px;
+        }
+
+        /* About */
+
+        .about {
+            background: #f7f9fc;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+        }
+
+        .about p {
+            margin-bottom: 18px;
+        }
+
+        .focus-box {
+            background: #ffffff;
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .focus-box h3 {
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        .focus-box ul {
+            padding-left: 20px;
+        }
+
+        .focus-box li {
+            margin-bottom: 10px;
+        }
+
+        /* Portfolio */
+
+        .portfolio {
+            background: #ffffff;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 28px;
+            transition: 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        .card-number {
+            font-size: 13px;
+            font-weight: 700;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #6b7280;
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 5px 9px;
+            background: #f1f3f5;
+            border-radius: 5px;
+            font-size: 12px;
+            margin: 3px;
+            color: #4b5563;
+        }
+
+        /* PLM */
+
+        .plm {
+            background: #f7f9fc;
+        }
+
+        .plm-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .plm-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 28px;
+        }
+
+        .plm-card h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .plm-card p {
+            color: #6b7280;
+        }
+
+        /* Process */
+
+        .process {
+            background: #ffffff;
+        }
+
+        .process-flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .process-step {
+            background: #f1f3f5;
+            padding: 12px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .arrow {
+            color: #9ca3af;
+            font-weight: bold;
+        }
+
+        /* Resume */
+
+        .resume {
+            background: #f7f9fc;
+        }
+
+        .resume-box {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 35px;
+            max-width: 850px;
+        }
+
+        .resume-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .resume-box p {
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: #111827;
+            color: #ffffff;
+        }
+
+        .contact .section-title {
+            color: #ffffff;
+        }
+
+        .contact .section-intro {
+            color: #d1d5db;
+        }
+
+        .contact a {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #0b1120;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 850px) {
+
+            .nav-container {
+                flex-direction: column;
+                padding: 18px 0;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .about-grid,
+            .portfolio-grid,
+            .plm-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 75px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="container nav-container">
+
+        <div class="logo">
+            Vishnuvardhan V
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#plm">PLM</a></li>
+            <li><a href="#process">Documentation</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<!-- Hero -->
+
+<header class="hero">
+
+    <div class="container hero-content">
+
+        <div class="eyebrow">
+            Technical Writing Portfolio
+        </div>
+
+        <h1>
+            Vishnuvardhan V
+        </h1>
+
+        <h2>
+            Technical Writer | Knowledge Management | Manufacturing Documentation
+        </h2>
+
+        <p>
+            A professional portfolio showcasing technical writing, knowledge
+            management, structured documentation, document lifecycle practices,
+            and PLM-oriented documentation concepts across manufacturing and
+            enterprise environments.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#portfolio"
+               class="button button-primary">
+                Explore Portfolio
+            </a>
+
+            <a href="#about"
+               class="button button-secondary">
+                About Me
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- About -->
+
+<section id="about" class="about">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p class="section-intro">
+            My professional work spans technical communication, knowledge
+            management, content operations, enterprise documentation and
+            learning content. This portfolio demonstrates how those skills
+            translate into structured technical documentation for engineering
+            and manufacturing environments.
+        </p>
+
+        <div class="about-grid">
+
+            <div>
+
+                <p>
+                    I work at the intersection of people, processes, systems
+                    and information. My experience includes creating and
+                    maintaining structured content, working with subject matter
+                    experts, managing knowledge repositories, supporting
+                    documentation lifecycles and translating complex information
+                    into clear, user-focused content.
+                </p>
+
+                <p>
+                    My technical documentation interests include manufacturing
+                    work instructions, SOPs, product specifications, technical
+                    manuals, user guides, training content, release notes,
+                    knowledge articles and API documentation.
+                </p>
+
+                <p>
+                    This portfolio contains independently created demonstration
+                    projects. The sample products, specifications and scenarios
+                    are fictional and are intended solely to demonstrate
+                    technical writing and documentation practices.
+                </p>
+
+            </div>
+
+            <div class="focus-box">
+
+                <h3>
+                    Areas of Focus
+                </h3>
+
+                <ul>
+                    <li>Technical Writing</li>
+                    <li>Manufacturing Documentation</li>
+                    <li>Knowledge Management</li>
+                    <li>Document Lifecycle Management</li>
+                    <li>PLM & Document Management</li>
+                    <li>Technical Content Development</li>
+                    <li>Stakeholder & SME Collaboration</li>
+                    <li>Structured Content</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Portfolio -->
+
+<section id="portfolio" class="portfolio">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Technical Writing Portfolio
+        </h2>
+
+        <p class="section-intro">
+            Demonstration documentation developed around a fictional
+            industrial manufacturing product to showcase technical writing,
+            documentation planning, manufacturing communication and
+            document-control practices.
+        </p>
+
+        <div class="portfolio-grid">
+
+
+            <!-- Portfolio 01 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 01
+                </div>
+
+                <h3>
+                    Product Specification
+                </h3>
+
+                <p>
+                    Defines product characteristics, dimensional requirements,
+                    material requirements, inspection requirements and
+                    acceptance criteria.
+                </p>
+
+                <span class="tag">
+                    Manufacturing
+                </span>
+
+                <span class="tag">
+                    Engineering
+                </span>
+
+                <span class="tag">
+                    Specification
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 02 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 02
+                </div>
+
+                <h3>
+                    Manufacturing Work Instruction
+                </h3>
+
+                <p>
+                    Step-by-step documentation demonstrating how a specific
+                    manufacturing task can be performed consistently and safely.
+                </p>
+
+                <span class="tag">
+                    Work Instruction
+                </span>
+
+                <span class="tag">
+                    Manufacturing
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 03 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 03
+                </div>
+
+                <h3>
+                    Standard Operating Procedure
+                </h3>
+
+                <p>
+                    Structured procedure defining purpose, scope,
+                    responsibilities, process steps and quality controls.
+                </p>
+
+                <span class="tag">
+                    SOP
+                </span>
+
+                <span class="tag">
+                    Process
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 04 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 04
+                </div>
+
+                <h3>
+                    Technical Manual
+                </h3>
+
+                <p>
+                    Product-focused technical documentation covering
+                    description, installation, maintenance, inspection and
+                    troubleshooting.
+                </p>
+
+                <span class="tag">
+                    Technical Manual
+                </span>
+
+                <span class="tag">
+                    Product
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 05 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 05
+                </div>
+
+                <h3>
+                    User Guide
+                </h3>
+
+                <p>
+                    User-oriented documentation designed to help operators
+                    understand and use an industrial product safely.
+                </p>
+
+                <span class="tag">
+                    User Guide
+                </span>
+
+                <span class="tag">
+                    Operations
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 06 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 06
+                </div>
+
+                <h3>
+                    Training Guide
+                </h3>
+
+                <p>
+                    Structured learning material designed to help operators
+                    understand a product, process and required safety practices.
+                </p>
+
+                <span class="tag">
+                    Training
+                </span>
+
+                <span class="tag">
+                    Learning
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 07 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 07
+                </div>
+
+                <h3>
+                    Release Notes
+                </h3>
+
+                <p>
+                    Concise communication of product, engineering and
+                    documentation changes between controlled revisions.
+                </p>
+
+                <span class="tag">
+                    Release
+                </span>
+
+                <span class="tag">
+                    Change
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 08 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 08
+                </div>
+
+                <h3>
+                    Knowledge Base Article
+                </h3>
+
+                <p>
+                    Troubleshooting-focused content demonstrating concise
+                    problem, cause, resolution and escalation documentation.
+                </p>
+
+                <span class="tag">
+                    Knowledge
+                </span>
+
+                <span class="tag">
+                    Troubleshooting
+                </span>
+
+            </div>
+
+
+            <!-- Portfolio 09 -->
+
+            <div class="card">
+
+                <div class="card-number">
+                    PORTFOLIO 09
+                </div>
+
+                <h3>
+                    API Documentation
+                </h3>
+
+                <p>
+                    Demonstration API reference covering endpoints,
+                    parameters, authentication, responses and error handling.
+                </p>
+
+                <span class="tag">
+                    API
+                </span>
+
+                <span class="tag">
+                    Technical
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PLM -->
+
+<section id="plm" class="plm">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            PLM & Document Management
+        </h2>
+
+        <p class="section-intro">
+            Demonstrating understanding of controlled technical information,
+            product lifecycle documentation and enterprise document-management
+            environments.
+        </p>
+
+        <div class="plm-grid">
+
+            <div class="plm-card">
+
+                <h3>
+                    Teamcenter
+                </h3>
+
+                <p>
+                    PLM concepts including product data, Item and Item Revision,
+                    datasets, product structures, BOMs, workflows, lifecycle
+                    management, revision control and change management.
+                </p>
+
+            </div>
+
+            <div class="plm-card">
+
+                <h3>
+                    Windchill
+                </h3>
+
+                <p>
+                    PLM and product-data concepts including document management,
+                    revisions, lifecycle states, workflows, product structures
+                    and change processes.
+                </p>
+
+            </div>
+
+            <div class="plm-card">
+
+                <h3>
+                    SharePoint
+                </h3>
+
+                <p>
+                    Enterprise content management, collaboration,
+                    document libraries, version control, publishing and
+                    knowledge repositories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Documentation Process -->
+
+<section id="process" class="process">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Documentation Lifecycle
+        </h2>
+
+        <p class="section-intro">
+            A controlled documentation lifecycle helps ensure that information
+            is reviewed, approved, released, maintained and eventually
+            superseded in a traceable manner.
+        </p>
+
+        <div class="process-flow">
+
+            <div class="process-step">Plan</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Author</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Technical Review</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">SME Review</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Approval</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Release</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Maintain</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Revise</div>
+            <div class="arrow">→</div>
+
+            <div class="process-step">Supersede</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Resume -->
+
+<section id="resume" class="resume">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Resume
+        </h2>
+
+        <p class="section-intro">
+            Professional background, experience, education and certifications.
+        </p>
+
+        <div class="resume-box">
+
+            <h3>
+                Vishnuvardhan V
+            </h3>
+
+            <p>
+                Process Lead | Global Knowledge Management |
+                Technical Documentation
+            </p>
+
+            <p>
+                Resume PDF will be added here as the portfolio develops.
+            </p>
+
+            <a href="#"
+               class="button button-primary">
+                Resume — Coming Soon
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Contact
+        </h2>
+
+        <p class="section-intro">
+            For professional opportunities, technical writing discussions
+            and documentation-related projects.
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/"
+               target="_blank">
+                View LinkedIn Profile
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Vishnuvardhan V · Technical Writing Portfolio
+    </p>
+
+    <p>
+        Demonstration content is independently created for portfolio purposes.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
