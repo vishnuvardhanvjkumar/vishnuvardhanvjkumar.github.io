@@ -1,1 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>API Documentation | Vishnuvardhan V</title>
+
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #1f2937;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d1d5db;
+    font-size: 17px;
+}
+
+main {
+    padding: 60px 0;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #111827;
+}
+
+.meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.meta div {
+    background: #f3f4f6;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.meta strong {
+    display: block;
+    color: #111827;
+}
+
+.button {
+    display: inline-block;
+    background: #111827;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.note {
+    background: #fff7ed;
+    border-left: 4px solid #f97316;
+    padding: 18px;
+}
+
+footer {
+    background: #111827;
+    color: #9ca3af;
+    padding: 25px;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .meta {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<p>TECHNICAL WRITING PORTFOLIO · PROJECT 09</p>
+
+<h1>
+WC-100 Documentation Service API
+</h1>
+
+<p>
+API Reference & Developer Documentation
+</p>
+
+</div>
+
+</header>
+
+
+<main>
+
+<div class="container">
+
+
+<div class="card">
+
+<h2>Project Overview</h2>
+
+<p>
+This demonstration project presents API documentation for a
+fictional documentation service supporting access to product
+documentation, document metadata, revisions and knowledge-base
+information.
+</p>
+
+<p>
+The document demonstrates the ability to structure technical API
+information so that developers, integration teams and application
+support users can understand and consume an API effectively.
+</p>
+
+<div class="meta">
+
+<div>
+<strong>Document Type</strong>
+API Documentation
+</div>
+
+<div>
+<strong>API Version</strong>
+v1
+</div>
+
+<div>
+<strong>Document Number</strong>
+API-WC-100-001
+</div>
+
+<div>
+<strong>Revision</strong>
+A
+</div>
+
+<div>
+<strong>Data Format</strong>
+JSON
+</div>
+
+<div>
+<strong>Status</strong>
+Demonstration
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>What This Sample Demonstrates</h2>
+
+<ul>
+
+<li>API reference documentation</li>
+
+<li>Endpoint documentation</li>
+
+<li>HTTP method documentation</li>
+
+<li>Request and response examples</li>
+
+<li>Parameter documentation</li>
+
+<li>Authentication guidance</li>
+
+<li>Error and status-code documentation</li>
+
+<li>Developer-focused technical writing</li>
+
+<li>API versioning awareness</li>
+
+<li>Troubleshooting guidance</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>API Coverage</h2>
+
+<p>
+The documentation covers the following fictional API capabilities:
+</p>
+
+<ul>
+
+<li>Search documentation</li>
+
+<li>Retrieve document metadata</li>
+
+<li>Retrieve document revisions</li>
+
+<li>Search knowledge articles</li>
+
+<li>Retrieve related documentation</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Documentation Structure</h2>
+
+<p>
+The API documentation follows a developer-friendly structure.
+</p>
+
+<ul>
+
+<li>API overview</li>
+
+<li>Authentication</li>
+
+<li>Base URL</li>
+
+<li>HTTP methods</li>
+
+<li>Endpoint summary</li>
+
+<li>Parameters</li>
+
+<li>Request examples</li>
+
+<li>Response examples</li>
+
+<li>Status codes</li>
+
+<li>Error handling</li>
+
+<li>Troubleshooting</li>
+
+<li>Versioning</li>
+
+<li>Revision history</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Example Endpoint</h2>
+
+<p>
+One of the documented endpoints retrieves metadata for a specific
+technical document.
+</p>
+
+<p>
+<strong>Method:</strong> GET
+</p>
+
+<p>
+<strong>Endpoint:</strong>
+<code>/documents/{documentId}</code>
+</p>
+
+<p>
+The documentation explains the required path parameter, request
+format, authentication requirement, response structure and possible
+error conditions.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Developer Guidance</h2>
+
+<p>
+The sample includes practical examples using HTTP, cURL, JavaScript
+and Python to help developers understand how the API can be consumed.
+</p>
+
+<p>
+Examples are supported by explanations rather than presented as
+code alone, allowing users with different levels of technical
+experience to understand the intended usage.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Error Handling</h2>
+
+<p>
+The documentation explains common HTTP status codes including:
+</p>
+
+<ul>
+
+<li>200 — Successful request</li>
+
+<li>400 — Invalid request</li>
+
+<li>401 — Authentication failure</li>
+
+<li>403 — Insufficient permission</li>
+
+<li>404 — Resource not found</li>
+
+<li>429 — Rate limit exceeded</li>
+
+<li>500 — Internal server error</li>
+
+</ul>
+
+<p>
+Common errors are accompanied by causes and recommended actions to
+support troubleshooting.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>API Documentation Lifecycle</h2>
+
+<p>
+API documentation is maintained alongside the technical interface.
+</p>
+
+<p>
+<strong>
+API Design → Documentation → Developer Review → SME Validation →
+Publication → API Release → Feedback → Documentation Update
+</strong>
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Change Impact Assessment</h2>
+
+<p>
+The sample demonstrates how a technical writer assesses the
+documentation impact of an API change.
+</p>
+
+<p>
+A change to an endpoint, parameter, response structure or
+authentication mechanism may require updates to multiple areas of
+the documentation.
+</p>
+
+<ul>
+
+<li>Endpoint reference</li>
+
+<li>Parameters</li>
+
+<li>Request examples</li>
+
+<li>Response examples</li>
+
+<li>Error handling</li>
+
+<li>Developer guide</li>
+
+<li>Troubleshooting guidance</li>
+
+<li>Version information</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Enterprise Documentation Environment</h2>
+
+<p>
+The API documentation is presented as part of a broader enterprise
+documentation ecosystem.
+</p>
+
+<p>
+Technical content may be managed across enterprise platforms such
+as SharePoint, Teamcenter, Windchill, ServiceNow and other approved
+documentation or knowledge-management systems, depending on the
+organisation's environment.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Connection With the Documentation Portfolio</h2>
+
+<ul>
+
+<li>
+<strong>Portfolio 01 — Product Specification:</strong>
+Defines product requirements.
+</li>
+
+<li>
+<strong>Portfolio 02 — Manufacturing Work Instruction:</strong>
+Defines manufacturing and inspection activities.
+</li>
+
+<li>
+<strong>Portfolio 03 — SOP:</strong>
+Defines controlled processes.
+</li>
+
+<li>
+<strong>Portfolio 04 — Technical Manual:</strong>
+Provides detailed technical information.
+</li>
+
+<li>
+<strong>Portfolio 05 — User Guide:</strong>
+Provides user-focused guidance.
+</li>
+
+<li>
+<strong>Portfolio 06 — Training Guide:</strong>
+Provides structured learning content.
+</li>
+
+<li>
+<strong>Portfolio 07 — Release Notes:</strong>
+Communicates changes.
+</li>
+
+<li>
+<strong>Portfolio 08 — Knowledge Base Article:</strong>
+Provides concise searchable technical guidance.
+</li>
+
+<li>
+<strong>Portfolio 09 — API Documentation:</strong>
+Documents technical interfaces for developers and integration teams.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>View the Documentation</h2>
+
+<p>
+Open the complete API Documentation as a PDF.
+</p>
+
+<a class="button"
+href="API-WC-100-001-API-Documentation.pdf"
+target="_blank">
+
+Open API Documentation →
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>Portfolio Demonstration Notice</h2>
+
+<div class="note">
+
+This is an independently created technical writing demonstration.
+
+WC-100 is a fictional industrial wear component. The API,
+endpoints, URLs, parameters, responses and integration examples are
+fictional and were created solely for portfolio purposes.
+
+The enterprise systems referenced are generic examples and do not
+represent any specific organisational implementation.
+
+No confidential, proprietary, customer or production API
+information is included.
+
+</div>
+
+</div>
+
+
+</div>
+
+</main>
+
+
+<footer>
+
+Vishnuvardhan V · Technical Writing Portfolio
+
+</footer>
+
+</body>
+
+</html>
